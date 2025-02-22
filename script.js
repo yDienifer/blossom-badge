@@ -28,6 +28,19 @@ const startApp = () => {
       <label>Qual seu emoji favorito? &#x1F63B;&#x1F380;</label>
       <input type="text" name="favorite-emoji" placeholder="Escolha seu emoji preferido!" required />
     </div>
+
+    <div class="form-group">
+      <label>Café, chá, suco... Escolha seu favorito! &#x2615;&#x1F9CB;&#x1F375;</label>
+      <div id="drink-input-container"></div>
+      <select name="drinks" id="drink-options">
+        <option value="coffee">Café &#x2615;</option>
+        <option value="milkshake">Milkshake &#x1F9CB;</option>
+        <option value="tea">Chá &#x1F375;</option>
+        <option value="juice">Suco &#x1F379;</option>
+        <option value="mate">Chimarrão &#x1F9C9;</option>
+        <option value="other">Outro &#x2753;</option>
+      </select>
+    </div>
   </form>
   `;
 
