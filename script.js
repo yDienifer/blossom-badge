@@ -43,8 +43,18 @@ const startApp = () => {
     </div>
 
     <div class="form-group">
-      <label>Se quiser, escolha uma cor ou padrão para o seu crachá &#x1F3A8;&#x1F58C;&#xFE0F;</label>
+      <label>Se quiser, escolha uma cor de fundo para o seu crachá &#x1F3A8;&#x1F58C;&#xFE0F;</label>
       <input type="color" name="background-badge" />
+    </div>
+
+    <div class="form-group">
+      <label>Uma palavra que te define &#x1F4AD;&#x270D;&#xFE0F;</label>
+      <input type="text" name="favorite-word" placeholder="Escolha uma palavra que resuma sua vibe!" required />
+    </div>
+
+    <div class="form-group">
+      <label>Mensagem fofa ou inspiração para compartilhar? &#x1F48C;&#x1F337;</label>
+      <input type="text" name="user-message" placeholder="Deixe uma mensagem aqui!" />
     </div>
   </form>
   `;
