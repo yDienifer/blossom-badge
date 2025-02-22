@@ -56,6 +56,12 @@ const startApp = () => {
       <label>Mensagem fofa ou inspiração para compartilhar? &#x1F48C;&#x1F337;</label>
       <input type="text" name="user-message" placeholder="Deixe uma mensagem aqui!" />
     </div>
+
+    <div class="form-group">
+      <label>Deseja adicionar um sticker personalizado ao seu crachá? &#x1F428;&#x1FA77;</label>
+      <input type="file" name="sticker" accept="image/png, image/jpeg">
+      <small>Recomendado: PNG com fundo transparente, 150x150px</small>
+    </div>
   </form>
   `;
 
