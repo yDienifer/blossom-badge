@@ -41,6 +41,11 @@ const startApp = () => {
         <option value="other">Outro &#x2753;</option>
       </select>
     </div>
+
+    <div class="form-group">
+      <label>Se quiser, escolha uma cor ou padrão para o seu crachá &#x1F3A8;&#x1F58C;&#xFE0F;</label>
+      <input type="color" name="background-badge" />
+    </div>
   </form>
   `;
 
