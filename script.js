@@ -67,6 +67,12 @@ const startApp = () => {
       <input type="checkbox" name="badge-privacy" />
       <span>Deseja criar um link para que outras pessoas possam ver seu crachá?</span>
     </div>
+
+    <div class="form-group">
+      <button type="submit">
+        Enviar!
+      </button>
+    </div>
   </form>
   `;
 
