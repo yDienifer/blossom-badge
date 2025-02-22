@@ -62,6 +62,11 @@ const startApp = () => {
       <input type="file" name="sticker" accept="image/png, image/jpeg">
       <small>Recomendado: PNG com fundo transparente, 150x150px</small>
     </div>
+
+    <div>
+      <input type="checkbox" name="badge-privacy" />
+      <span>Deseja criar um link para que outras pessoas possam ver seu crachá?</span>
+    </div>
   </form>
   `;
 
