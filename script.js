@@ -18,6 +18,16 @@ const startApp = () => {
       <label>Onde podemos te enviar um abraço virtual? &#x1F4E9;&#x1FAC2;</label>
       <input type="email" name="email" placeholder="Digite seu e-mail (opcional)" />
     </div>
+
+    <div class="form-group">
+      <label>Onde encontramos seu cantinho na internet? &#x1F30E;&#x1F43E;</label>
+      <input type="text" id="social-media" name="social-media" placeholder="Seu @GitHub/Instagram/Twitter" required />
+    </div>
+
+    <div class="form-group">
+      <label>Qual seu emoji favorito? &#x1F63B;&#x1F380;</label>
+      <input type="text" name="favorite-emoji" placeholder="Escolha seu emoji preferido!" required />
+    </div>
   </form>
   `;
 
