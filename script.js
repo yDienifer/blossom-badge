@@ -80,3 +80,13 @@ const startApp = () => {
 }
 
 startApp(); // 🌸 chama a função `startApp` para que ela seja executada !!
+
+const formAction = () => {
+  const form = document.getElementById("form");
+
+  form.onsubmit = (event) => {
+    event.preventDefault(); // 🌸 impede que o comportamento padrão do botão de envio do formulário seja executado !!
+  }
+}
+
+formAction();
