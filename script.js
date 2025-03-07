@@ -93,15 +93,19 @@ const formAction = () => {
 
   drinkOptions.addEventListener("change", () => {
     if (drinkOptions.value === "other") {
-      drinkInputText = document.createElement("input"); // 🌸 cria um novo elemento de input !!
+      drinkInputText = document.createElement("input");
 
-      // 🌸 define os atributos do input !!
       drinkInputText.type = "text";
       drinkInputText.name = "other-option";
       drinkInputText.placeholder = "Digite aqui!";
       drinkInputText.required = true;
 
-      drinkInputContainer.appendChild(drinkInputText); // 🌸 adiciona o input dinâmico !!
+      drinkInputContainer.appendChild(drinkInputText);
+    } else {
+      if (drinkInputText) {
+        drinkInputContainer.removeChild(drinkInputText); // 🌸 remove o input criado se a seleção for diferente de "Outro" !!
+        drinkInputText = null;
+      }
     }
   });
 }
