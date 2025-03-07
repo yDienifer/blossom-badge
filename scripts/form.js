@@ -1,6 +1,6 @@
 const app = document.getElementById("app");
 
-const startApp = () => {
+export const renderForm = () => {
   const content = `
   <form id="form">
     <div class="form-group">
@@ -79,9 +79,9 @@ const startApp = () => {
   app.innerHTML = content; // 🌸 insere o conteúdo da constante `content` dentro do elemento (div#app) !!
 }
 
-startApp(); // 🌸 chama a função `startApp` para que ela seja executada !!
+renderForm(); // 🌸 chama a função `renderForm` para que ela seja executada !!
 
-const formAction = () => {
+export const formAction = () => {
   const form = document.getElementById("form");
   const drinkOptions = document.getElementById('drink-options');
   const drinkInputContainer = document.getElementById("drink-input-container");
