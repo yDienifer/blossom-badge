@@ -80,3 +80,34 @@ const startApp = () => {
 }
 
 startApp(); // 🌸 chama a função `startApp` para que ela seja executada !!
+
+const formAction = () => {
+  const form = document.getElementById("form");
+  const drinkOptions = document.getElementById('drink-options');
+  const drinkInputContainer = document.getElementById("drink-input-container");
+  let drinkInputText;
+
+  form.onsubmit = (event) => {
+    event.preventDefault();
+  }
+
+  drinkOptions.addEventListener("change", () => {
+    if (drinkOptions.value === "other") {
+      drinkInputText = document.createElement("input");
+
+      drinkInputText.type = "text";
+      drinkInputText.name = "other-option";
+      drinkInputText.placeholder = "Digite aqui!";
+      drinkInputText.required = true;
+
+      drinkInputContainer.appendChild(drinkInputText);
+    } else {
+      if (drinkInputText) {
+        drinkInputContainer.removeChild(drinkInputText); // 🌸 remove o input criado se a seleção for diferente de "Outro" !!
+        drinkInputText = null;
+      }
+    }
+  });
+}
+
+formAction();
