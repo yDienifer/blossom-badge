@@ -83,10 +83,27 @@ startApp(); // 🌸 chama a função `startApp` para que ela seja executada !!
 
 const formAction = () => {
   const form = document.getElementById("form");
+  const drinkOptions = document.getElementById('drink-options');
+  const drinkInputContainer = document.getElementById("drink-input-container");
+  let drinkInputText;
 
   form.onsubmit = (event) => {
-    event.preventDefault(); // 🌸 impede que o comportamento padrão do botão de envio do formulário seja executado !!
+    event.preventDefault();
   }
+
+  drinkOptions.addEventListener("change", () => {
+    if (drinkOptions.value === "other") {
+      drinkInputText = document.createElement("input"); // 🌸 cria um novo elemento de input !!
+
+      // 🌸 define os atributos do input !!
+      drinkInputText.type = "text";
+      drinkInputText.name = "other-option";
+      drinkInputText.placeholder = "Digite aqui!";
+      drinkInputText.required = true;
+
+      drinkInputContainer.appendChild(drinkInputText); // 🌸 adiciona o input dinâmico !!
+    }
+  });
 }
 
 formAction();
